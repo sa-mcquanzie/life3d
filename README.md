@@ -1,6 +1,6 @@
 ## 3D Game of Life
 
-#### My first attempt at Babylon.js
+#### first experiment with babylon.js
 
 Setup boilerplate thanks to: https://medium.com/the-innovation/babylon-js-typescript-project-setup-for-the-impatient-d8c71b4a57ad
 

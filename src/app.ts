@@ -1,11 +1,8 @@
-import Scene from './scene'
+import Life3D from './Sketches/Life3D';
 window.addEventListener('DOMContentLoaded', () => {
-    // Create the game using the 'renderCanvas'.
-    let game = new Scene('renderCanvas');
+    let game = new Life3D('renderCanvas');
 
-    // Create the scene.
-    game.createScene();
-
-    // Start render loop.
-    game.renderScene();
+    game.create();
+    game.render();
   });
+  
