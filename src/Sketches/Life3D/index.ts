@@ -1,6 +1,6 @@
 import * as BABYLON from '@babylonjs/core';
 import Sketch from '../Sketch';
-import Grid3D from './Classes';
+import { Grid3D } from './Classes';
 import {
   buildAssetName,
   clonedMesh,
@@ -19,23 +19,11 @@ import {
 
 
 export default class Life3D extends Sketch {
-  canvas: (
-    HTMLCanvasElement
-    | OffscreenCanvas
-    | WebGLRenderingContext
-    | WebGL2RenderingContext
-  );
-  engine: BABYLON.Engine;
-  scene: BABYLON.Scene;
-  meshes: (BABYLON.Mesh)[];
-
   constructor(canvas: string) {
     super(canvas);
   }
 
-
 	create(): BABYLON.Scene {
-    
     // Consts
 
     const GRID_SIZE = 10;

@@ -1,6 +1,6 @@
 import * as BABYLON from '@babylonjs/core';
-import Grid3D from '../Classes/Grid3D';
-import Cell from '../Types';
+import { Grid3D } from '../Classes/';
+import { Cell } from '../Types';
 
 
 export const createCell = (position: BABYLON.Vector3, cellSize?: number): Cell => {

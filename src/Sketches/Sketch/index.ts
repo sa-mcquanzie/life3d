@@ -18,7 +18,6 @@ export default class Sketch {
     this.meshes = [];
   }
 
-
 	create(): BABYLON.Scene {
     return this.scene;
   }

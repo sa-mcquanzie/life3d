@@ -1,3 +1,3 @@
 import { handlePointerEvents } from "./pointer";
 
-export default { handlePointerEvents };
+export { handlePointerEvents };

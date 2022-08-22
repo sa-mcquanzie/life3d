@@ -1,6 +1,6 @@
 import * as BABYLON from '@babylonjs/core';
 import { createCell } from "../Helpers";
-import { Cell } from "../types";
+import { Cell } from "../Types";
 
 export default class Grid3D {
   size: number;
