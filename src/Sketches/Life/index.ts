@@ -18,7 +18,7 @@ import {
 } from './Helpers';
 
 
-export default class Life3D extends Sketch {
+export default class Life extends Sketch {
   constructor(canvas: string) {
     super(canvas);
   }

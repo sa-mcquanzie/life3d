@@ -1,5 +1,5 @@
 import * as BABYLON from '@babylonjs/core';
-import { Grid3D } from '../Classes/';
+import { Grid3D } from '../Classes';
 import { Cell } from '../Types';
 
 

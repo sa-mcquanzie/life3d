@@ -1,4 +1,4 @@
-import { Life3D, Maze } from './Sketches';
+import { Life, Maze, Tilt } from './Sketches';
 import * as CANNON from 'cannon';
 
 window.CANNON = CANNON;

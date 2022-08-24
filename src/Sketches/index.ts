@@ -1,4 +1,5 @@
-import Life3D from "./Life3D";
-import Maze from "./Maze";
+import Life from './Life';
+import Maze from './Maze'
+import Tilt from './Tilt';
 
-export { Life3D, Maze }
+export { Life, Maze, Tilt }
