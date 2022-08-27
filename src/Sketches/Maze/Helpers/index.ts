@@ -10,8 +10,8 @@ export const generateMaze = (size: number): Cell[] => {
   let finish = Math.floor(size / 2);
   let c = [];
 
-  for(let z = start; z <= finish; z++) {
-    for(let x = start; x <= finish; x++) {
+  for(let z = start; z <= finish; z+=4) {
+    for(let x = start; x <= finish; x+=4) {
       c.push({
         x: x,
         z: z,
@@ -26,10 +26,10 @@ export const generateMaze = (size: number): Cell[] => {
   cells.forEach((cell) => {
     cell.neighbours = cells.filter((c) => {
       return (
-        (c.x === cell.x + 1 && c.z === cell.z) ||
-        (c.x === cell.x - 1 && c.z === cell.z) ||
-        (c.x === cell.x && c.z === cell.z + 1) ||
-        (c.x === cell.x && c.z === cell.z - 1)
+        (c.x === cell.x + 4 && c.z === cell.z) ||
+        (c.x === cell.x - 4 && c.z === cell.z) ||
+        (c.x === cell.x && c.z === cell.z + 4) ||
+        (c.x === cell.x && c.z === cell.z - 4)
       );
     }).filter(c => c)
   });
@@ -50,22 +50,22 @@ export const generateMaze = (size: number): Cell[] => {
     } else {
       let nextCell = sample(neighbours);
 
-      if(nextCell.z === currentCell.z + 1) {
+      if(nextCell.z === currentCell.z + 4) {
         currentCell.exits.north = true;
         nextCell.exits.south = true
       }
 
-      if(nextCell.x === currentCell.x + 1) {
+      if(nextCell.x === currentCell.x + 4) {
         currentCell.exits.east = true;
         nextCell.exits.west = true;
       }
 
-      if(nextCell.z === currentCell.z - 1) {
+      if(nextCell.z === currentCell.z - 4) {
         currentCell.exits.south = true;
         nextCell.exits.north = true;
       }
 
-      if(nextCell.x === currentCell.x - 1) {
+      if(nextCell.x === currentCell.x - 4) {
         currentCell.exits.west = true;
         nextCell.exits.east = true;
       }
